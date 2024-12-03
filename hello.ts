@@ -1,7 +1,15 @@
-"use strict";
-// greet the world
-function greet(person: string, date: Date) {
-    console.log(`Hello ${person}, today is ${date.toDateString()}`);
+class Human {
+    name: string;
+    constructor( data: string) {
+        this.name = data;
+    }
 }
 
-greet("Maddison",  new Date());
+let human = new Human('Gabriel');
+if (human instanceof Human) {
+    console.log(`${human.name} is a human`);
+}
+
+let str: any = "extra"
+let strLength = (str as string).length;
+console.log(strLength);

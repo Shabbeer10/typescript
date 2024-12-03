@@ -1,6 +1,13 @@
-"use strict";
-// greet the world
-function greet(person, date) {
-    console.log(`Hello ${person}, today is ${date.toDateString()}`);
+var Human = /** @class */ (function () {
+    function Human(data) {
+        this.name = data;
+    }
+    return Human;
+}());
+var human = new Human('Gabriel');
+if (human instanceof Human) {
+    console.log("".concat(human.name, " is a human"));
 }
-greet("Maddison", new Date());
+var str = "extra";
+var strLength = str.length;
+console.log(strLength);
