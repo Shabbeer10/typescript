@@ -1,40 +1,45 @@
-let variable: any = "extra"
-let varLength = (<string>variable).length;
+let temperature: number = 20;
 
-// Creating Arrays
-let strings: string[] = ["one", "two", "three", "four","five"];
-
-let numbers: Array<number> = [1, 2, 3, 4, 5,]
-
-//Multitype Arrays
-let strAndNum: (string | number)[] = ['age', 20]
-
-//multidimensional array
-let numbersArray: number[][] = [[1,2,3,4,5],[6,7,8,9,10]]
-
-//Tuples
-let exampleTuple: [number, string] = [20, "twenty"];
-
-//Enums
-enum State{
-    Playing,
-    Paused,
-    Stopped,
+if(temperature > 30) {
+    //console.log("AUJ its hot!");
+} else if (temperature > 20) {
+    //console.log("It's a lekker day");    
+} else {
+    //console.log("Its abitjie cold");
 }
 
-//Objects
-const human = {
-    firstname: 'Frank',
-    age: 32,
-    height: 218,
-    greet: ()=> {
-        if (human.height >= 200) {
-            return console.log(`hello ${human.firstname}, you long ass motherfucker`)
-        }else { return console.log(`hello there ${human.firstname}`)}
-    }
-};
-//human.greet();
+let choice: number = 0;
 
-type Human = {firstName: string, age: number, height: number};
+switch (choice) {
+    case 1:
+        //console.log("you choose 1");
+        break;
+    case 2:
+        //console.log("you choose 2");
+        break;
+    case 3:
+        //console.log("you choose 3");
+        break;
+}
 
-const John: Human = {firstName: "John", age: 20, height: 170};
+let numbers: number[] = [1,2,3,4,5,6,7,8,9,10];
+
+for (let i: number = 0; i < numbers.length; i++) {
+    //console.log(numbers[i])
+}
+
+let count:number = 0;
+
+while (count < 10) {
+    //console.log(count)
+    count++;
+}
+
+let i: number = 0;
+
+do {
+    console.log(`i: ${i}`);
+    i++;
+} while (i<5);
+
+function
